@@ -1,5 +1,9 @@
 package Structure.Graph;
 
-public class IGraph {
-    
+public interface IGraph {  
+    int order();
+    int size();
+    int degree(int u);
+    Iterable<Integer> adjacency(int u);
+    void addEdge(int u, int v);
 }

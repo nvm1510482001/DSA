@@ -31,8 +31,15 @@ public class ArrayQueue<E> implements IQueue<E> {
         // TODO Auto-generated method stub
         if (size < capacity) {
             arrData[(pTopId + size) % capacity] = data;
-            ++size;
+        } else {
+            E[] copyArr = (E[]) new Object[this.capacity * 2];
+            
+            for(int i = 0;i < capacity; i++) {
+                    
+            }
         }
+
+        ++size;
     }
 
     @Override
